@@ -1,3 +1,12 @@
-# data-visualization-project
-This is the main repository of the data visualization project for the year 2022.
-SUPSI, DSAI2 
+# Data visualization course
+## Students: 
+***
+#### Stefano Billeter
+#### Manuel Acquistapace
+#### Miro Rava
+***
+SUPSI  
+Bachelor in Data Science and Artificial Intelligence <br>
+Teacher: Giovanni Profeta
+
+Live website: [https://dataviz-supsi.github.io/](https://manueel62.github.io/data-vis/)

@@ -1,0 +1,5 @@
+data/
+.idea/
+edu/
+**/.DS_Store
+gulpfile.js

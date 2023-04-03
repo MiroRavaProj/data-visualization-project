@@ -1,0 +1,1072 @@
+:root {
+  --background-color: rgb(6, 11, 25);
+  --border-color: rgb(255, 255, 255, 0.1);
+  --highlight-color: rgb(126, 87, 194);
+  --yt-color: rgb(229, 57, 53);
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, a, p, span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight-color);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav .nav-section {
+  padding: 2rem 1rem;
+  display: flex;
+  gap: 2rem;
+  border-left: 1px solid var(--border-color);
+  align-items: center;
+  justify-content: center;
+}
+
+#slider1 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
+}
+
+#slider1 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider1 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider1 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider1 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider1 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#slider1.in {
+  bottom:calc(100% * (1/9));
+}
+
+#slider2 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
+}
+
+#slider2 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider2 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider2 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider2 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider2 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#slider2.in {
+  bottom:calc(100% * (1/9));
+}
+
+#slider3 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
+}
+
+#slider3 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider3 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider3 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider3 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider3 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#slider3.in {
+  bottom:calc(100% * (1/9));
+}
+
+#slider4 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
+
+}
+
+#slider4 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider4 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider4 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider4 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider4 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#slider4.in {
+  bottom:calc(100% * (1/9));
+}
+
+#slider5 {
+  flex-grow: 1;
+  position: absolute;
+  width: 75%;
+  height: calc(100% * (8/9));
+  bottom: 100%;
+  z-index: 1;
+  background: #060b19;
+  transition: bottom 1s;
+
+  margin-top: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem;
+}
+
+#slider5 > p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+#slider5 > p > a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+#slider5 > p > a:hover{
+  text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+#slider5 > h3{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+#slider5 > h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#slider5.in {
+  bottom:calc(100% * (1/9));
+}
+
+#nav-mobile-section {
+  display: flex;
+  flex-basis: calc(100% * (2 / 3));
+  z-index: 2;
+}
+
+#nav-toggle-button { 
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid var(--border-color);
+  color: white;
+  cursor: pointer;
+  display: none;
+  gap: 0.8rem;
+  height: 100%;
+  justify-content: center;
+  outline: none;
+  padding: 0rem 3rem;
+  position: relative;
+  z-index: 3;
+  font-size: 1.2rem;
+}
+
+#nav-toggle-button:hover,
+#nav-toggle-button:hover > span {
+  color: var(--highlight-color);
+}
+
+#nav-toggle-button > span,
+#nav-toggle-button > i { 
+  display: inline-block;
+  height: 1rem;
+  line-height: 1rem;
+}
+
+#nav-mobile-section {
+  flex-basis: calc(5*100%/16);
+}
+
+#nav-logo-section {
+  flex-basis: calc(11*100%/16);
+  justify-content: flex-start;
+}
+
+#nav-logo-section > a > i {
+  font-size: 4rem;
+}
+
+#nav-logo-section > a  {
+  font-size: 2.5rem;
+}
+
+#nav-logo-section > a  >p {
+  font-size: 1rem;
+}
+
+#nav-contact-section,
+#nav-info-section {
+  flex-basis: 40%;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+#nav-social-section{
+  flex-basis: 20%;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Popup container */
+#nav-contact-section > .popup_1 {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+#nav-contact-section > .popup_1 > .popuptext {
+  visibility: hidden;
+  width: 446px;
+  height: 156px;
+  background-color: #394670;
+  color: #fff;
+  text-align: -webkit-left;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: -780%;
+  right: -100%;
+  margin-left: -80px;
+}
+
+#nav-contact-section > .popup_1 > .popuptext > iframe{
+  width: 430px;
+  height: 140px;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+#nav-contact-section > .popup_1 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* Popup container */
+main > article > .article-title-section > .popup {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+main > article > .article-title-section > .popup > .popuptext {
+  visibility: hidden;
+  width: 716px;
+  height: 716px;
+  background-color: #394670;
+  color: #fff;
+  text-align: -webkit-left;
+  border-radius: 6px;
+  padding: 8px 8px;
+  position: absolute;
+  z-index: 2;
+  bottom: 150%;
+  right: -20%;
+  margin-left: -80px;
+}
+
+main > article > .article-title-section > .popup > .popuptext > iframe{
+  width: 700px;
+  height: 700px;
+}
+
+  /* Popup arrow */
+main > article > .article-title-section > .popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 91%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #394670 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+main > article > .article-title-section > .popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+main > article {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 8fr 1fr;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transition: transform 400ms ease;  
+}
+
+main > article[data-status="inactive"] {
+  transform: translateX(-100%);
+  transition: none;
+}
+
+main > article[data-status="active"] {
+  transform: translateX(0%);
+}
+
+main > article[data-status="before"] {
+  transform: translateX(-100%);
+}
+
+main > article[data-status="after"] {
+  transform: translateX(100%);
+}
+
+main > article[data-status="becoming-active-from-before"] {
+  transform: translateX(-100%);
+  transition: none;
+}
+
+main > article[data-status="becoming-active-from-after"] {
+  transform: translateX(100%);
+  transition: none;
+}
+
+#map1, #map2, #map3, #map4, #map5{
+  border: none
+}
+
+main > article > .article-section {
+  height: 100%;
+  display: flex;
+}
+
+main > article > .article-description-section,
+main > article > .article-nav-section {
+  border-left: 1px solid var(--border-color);
+}
+
+main > article > .article-title-section,
+main > article > .article-nav-section {
+  border-top: 1px solid var(--border-color);
+}
+
+main > article > .article-image-section {
+  background-position: center;
+  background-size: cover;
+}
+
+main > article > .article-description-section {
+  margin:1px 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  flex-direction: column;
+  justify-content: start;
+  padding: 2rem; 
+}
+
+main > article > .article-description-section > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+}
+
+main > article > .article-description-section > p  > a:hover {
+  text-decoration: underline;
+}
+
+main > article > .article-title-section {
+  align-items: center; 
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  z-index: 3;
+  background: var(--background-color);
+}
+
+main > article > .article-title-section * {
+  color: white;
+}
+
+main > article > .article-title-section > h2 {
+  flex-basis: 70%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+main > article > .article-title-section > .popup > a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size:  1.5rem;
+}
+
+
+main > article > .article-nav-section > .article-nav-button {
+  background-color: transparent;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+main > article > .article-nav-section > .article-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+main > article > .article-nav-section > .article-nav-button:nth-child(2) {
+  border-left: 1px solid var(--border-color);
+}
+
+@media(max-width: 1200px) {
+  #nav-mobile-section {
+    flex-basis: calc(5*100%/16);
+  }
+
+  /* Popup container */
+  #nav-contact-section > .popup_1 {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  /* The actual popup (appears on top) */
+  #nav-contact-section > .popup_1 > .popuptext {
+    visibility: hidden;
+    width: 446px;
+    height: 156px;
+    background-color: #394670;
+    color: #fff;
+    text-align: -webkit-left;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: -780%;
+    right: -100%;
+    margin-left: -80px;
+  }
+
+  #nav-contact-section > .popup_1 > .popuptext > iframe{
+    width: 430px;
+    height: 140px;
+  }
+
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  #nav-contact-section > .popup_1 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  #nav-logo-section {
+    flex-basis: calc(11*100%/16);
+    justify-content: flex-start;
+  }
+
+  /* Popup container */
+  main > article > .article-title-section > .popup {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  /* The actual popup (appears on top) */
+  main > article > .article-title-section > .popup > .popuptext {
+    visibility: hidden;
+    width: 516px;
+    height: 516px;
+    background-color: #394670;
+    color: #fff;
+    text-align: -webkit-left;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 2;
+    bottom: 150%;
+    right: -20%;
+    margin-left: -80px;
+  }
+
+  main > article > .article-title-section > .popup > .popuptext > iframe{
+    width: 500px;
+    height: 500px;
+  }
+
+  /* Popup arrow */
+  main > article > .article-title-section > .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 91%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #394670 transparent transparent transparent;
+  }
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  main > article > .article-title-section > .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  #slider1 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider1.in {
+    bottom:calc(100% * (3/9));
+  }
+
+  #slider2 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider2.in {
+    bottom:calc(100% * (3/9));
+  }
+
+  #slider3 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider3.in {
+    bottom:calc(100% * (3/9));
+  }
+
+  #slider4 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider4.in {
+    bottom:calc(100% * (3/9));
+  }
+
+  #slider5 {
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100% * (6/9));
+    bottom: 100%;
+    z-index: 1;
+    background: #060b19;
+    transition: bottom 1s;
+  }
+  #slider5.in {
+    bottom:calc(100% * (3/9));
+  }
+
+  main {
+    overflow-y: auto;
+  }
+  
+  main > article {
+    grid-template-columns: none;
+    grid-template-rows: 3fr 0.25fr 1fr 0.25fr;
+    height: 100%;
+  }
+   
+  main > article > .article-title-section > h2 {
+    flex-basis: 70%;
+    font-size: 1.75em;
+    line-height: 1.5rem;
+  }
+  
+  main > article > .article-title-section > .popup > a {
+    font-size: 0.75rem;
+  }
+  
+  main > article > .article-description-section,
+  main > article > .article-nav-section {
+    border-left: none;
+  }
+
+  main > article > .article-image-section {
+    order: 1;
+  }
+  
+  main > article > .article-title-section {
+    border-bottom: 1px solid var(--border-color);
+    order: 2;
+    padding: 1rem;
+  }
+  
+  main > article > .article-description-section {
+    justify-content: center;
+    order: 3;
+    padding: 0.5rem;
+    overflow: auto;
+
+  }
+  main > article > .article-title-section > h2 {
+    flex-basis: 70%;
+    font-size: 1.75em;
+    line-height: 1.5rem;
+  }
+
+  main > article > .article-title-section > .popup > a {
+    font-size: 0.75rem;
+  }
+
+  main > article > .article-description-section {
+    padding: 1rem;
+  }
+
+  main > article > .article-description-section > p {
+    font-size: 1rem;
+  }
+
+  main > article > .article-nav-section {
+    border-bottom: 1px solid var(--border-color);
+    order: 4;
+  }
+}
+
+@media(max-width: 800px) {  
+  nav {
+    justify-content: space-between;  
+  }
+  
+  nav[data-toggled="true"] > #nav-mobile-section {  
+    transform: translateY(0%);
+  }
+
+  nav[data-toggled="true"] > #nav-toggle-button {
+    border-left: none;
+  }
+
+  nav[data-transitionable="true"] > #nav-mobile-section {
+    transition: transform 400ms ease;
+  }
+  
+  nav .nav-section {
+    border-left: none;
+    padding: 1rem 1rem;
+  }
+  
+  #nav-logo-section >  a {
+    font-size: 1.5rem;
+  }
+
+  /* Popup container */
+  #nav-contact-section > .popup_1 {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  /* The actual popup (appears on top) */
+  #nav-contact-section > .popup_1 > .popuptext {
+    visibility: hidden;
+    width: 446px;
+    height: 156px;
+    background-color: #394670;
+    color: #fff;
+    text-align: -webkit-left;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: -680%;
+    right: -180%;
+    margin-left: -80px;
+  }
+
+  #nav-contact-section > .popup_1 > .popuptext > iframe{
+    width: 430px;
+    height: 140px;
+  }
+
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  #nav-contact-section > .popup_1 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  #nav-mobile-section {
+    background-color: var(--background-color);
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    transform: translateY(-100%);
+  } 
+  
+  #nav-toggle-button {
+    display: flex;
+  }  
+
+  
+  #nav-social-section > a {
+    font-size: 2rem; 
+  }  
+  
+  #nav-contact-section {
+    padding-bottom: 4rem;
+  }
+
+  /* Popup container */
+  main > article > .article-title-section > .popup {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  /* The actual popup (appears on top) */
+  main > article > .article-title-section > .popup > .popuptext {
+    visibility: hidden;
+    width: 416px;
+    height: 416px;
+    background-color: #394670;
+    color: #fff;
+    text-align: -webkit-left;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    right: -20%;
+    margin-left: -80px;
+  }
+
+  main > article > .article-title-section > .popup > .popuptext > iframe{
+    width: 400px;
+    height: 400px;
+  }
+
+  /* Popup arrow */
+  main > article > .article-title-section > .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 91%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #394670 transparent transparent transparent;
+  }
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  main > article > .article-title-section > .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
+  main > article {
+    grid-template-rows: 3fr 0.25fr 1fr 0.25fr;
+    height: 100%;
+  }
+  
+  main > article > .article-title-section {
+    padding: 1rem;
+  }
+  
+  main > article > .article-title-section > h2 {
+    flex-basis: 70%;
+    font-size: 1.75em; 
+    line-height: 1.5rem;
+  }
+
+  main > article > .article-title-section > .popup > a {
+    font-size: 0.75rem;
+  }
+  
+  main > article > .article-description-section {
+    padding: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  main > article > .article-description-section > p {
+    font-size: 1rem;
+  }
+}
+
+/* -- YT link / Source link styles -- */
+
+main > article > .article-description-section > p  > .source-link {
+  color: var(--highlight-color);
+  display: inline;
+}
+
+main > article .yt-link,
+main > article .yt-link > i {
+  color: var(--yt-color);
+  display: inline;
+}
