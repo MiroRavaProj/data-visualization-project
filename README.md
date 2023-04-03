@@ -1,12 +1,15 @@
 # Data visualization course
 ## Students: 
 ***
+#### Miro Rava
+
+In collaboration with:
+
 #### Stefano Billeter
 #### Manuel Acquistapace
-#### Miro Rava
 ***
 SUPSI  
 Bachelor in Data Science and Artificial Intelligence <br>
 Teacher: Giovanni Profeta
 
-Live website: [https://dataviz-supsi.github.io/](https://manueel62.github.io/data-vis/)
+Live website: [https://miroravaproj.github.io/data-visualization-project/](https://miroravaproj.github.io/data-visualization-project/)
